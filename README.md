@@ -28,4 +28,5 @@
 
 - 사용자와 상호작용하는 방법 : HTML 요소를 찾는다. event를 listen한다. event에 반응한다.
 - 보편적으로 CSS는 style을 JS는 animation을 제어하는 용도로 사용한다.
-- classList.toggle : 기존 class명 뒤에 새로운 class명을 추가하는 방식으로 토글링한다.
+- classList.toggle : 기존 class명 뒤에 새로운 class명을 추가/삭제하는 방식으로 토글링한다.
+- classList.add/remove : calss명을 추가/삭제한다.
