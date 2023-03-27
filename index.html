@@ -4,14 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML을 읽어보자</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 id="title">Grab me!</h1>
-    <h2 id="content">Click me!</h2>
-    <h3 class="active">Click me!</h3>
-    <h4>Hello World</h4>
+    <form id="login-form" class="hidden">
+      <input
+        type="text"
+        placeholder="What is your name?"
+        maxlength="15"
+        required
+      />
+      <input type="submit" value="Log in" />
+      <!-- <button>Log in</button> -->
+    </form>
+    <a class="hidden" href="https://blog.naver.com/ki_dongg">Go blog</a>
+
+    <script type="text/javascript" src="app.js"></script>
   </body>
-  <script type="text/javascript" src="app.js"></script>
 </html>

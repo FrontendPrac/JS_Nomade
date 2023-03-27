@@ -1,25 +1,3 @@
-/* body {
-  background-color: beige;
-} */
-
-.active {
-  color: pink;
-  transition: color 0.5s ease-in-out;
-}
-
-.active2 {
-  color: greenyellow;
-  transition: color 0.5s ease-in-out;
-}
-
-.bigScreen {
-  background-color: purple;
-}
-
-.mediumScreen {
-  background-color: orange;
-}
-
-.smallScreen {
-  background-color: beige;
+.hidden {
+  display: none;
 }

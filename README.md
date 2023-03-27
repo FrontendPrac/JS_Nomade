@@ -30,3 +30,14 @@
 - 보편적으로 CSS는 style을 JS는 animation을 제어하는 용도로 사용한다.
 - classList.toggle : 기존 class명 뒤에 새로운 class명을 추가/삭제하는 방식으로 토글링한다.
 - classList.add/remove : calss명을 추가/삭제한다.
+
+# 자바스크립트(3.27)
+
+- form -> input : required, maxlength, placeholder, type, value
+- form 안에서 input을 입력하고 enter를 누르면 자동으로 submit 된다.
+- form이 submit 할때마다 브라우저는 자동으로 새로고침을 하고 데이터를 보낸다.
+- eventListener 두번째 인자의 함수의 첫번째 인자는 event에 대한 정보를 담고 있다.
+- event.preventDefault() : 브라우저 새로고침 막기
+- localstorage.setItem("", "") : 로컬스토리지 추가하기
+- localstorage.getItem("") : 로컬스토리지 가져오기
+- localstorage.removeItem("") : 로컬스토리지 삭제하기
