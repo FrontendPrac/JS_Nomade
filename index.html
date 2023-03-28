@@ -7,17 +7,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form id="login-form" class="hidden">
-      <input
-        type="text"
-        placeholder="What is your name?"
-        maxlength="15"
-        required
-      />
-      <input type="submit" value="Log in" />
-      <!-- <button>Log in</button> -->
+
+    <form>
+      <h1>Random Number Game</h1>
+      Generate a number between 0 and <input type="number" id="max-number" min="0"/> </br>
+      Guess the number: <input type="number" id="guess-number" min="0"/> <input type="submit" id="submit-btn" />
     </form>
-    <a class="hidden" href="https://blog.naver.com/ki_dongg">Go blog</a>
+    <div id="machine"></div>
+    <div id="result-win" class="hidden"></div>
+    <div id="result-lose"></div>
 
     <script type="text/javascript" src="app.js"></script>
   </body>
