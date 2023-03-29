@@ -5,16 +5,18 @@ function diffXmas() {
   const nowDate = new Date();
   const diffDate = xmasDate - nowDate;
 
-  diffDay = String(Math.floor(diffDate / (1000 * 60 * 60 * 24)));
-  diffHour = String(Math.floor((diffDate / (1000 * 60 * 60)) % 24)).padStart(
+  const diffDay = String(Math.floor(diffDate / (1000 * 60 * 60 * 24)));
+  const diffHour = String(
+    Math.floor((diffDate / (1000 * 60 * 60)) % 24)
+  ).padStart(2, "0");
+  const diffMinute = String(Math.floor((diffDate / (1000 * 60)) % 60)).padStart(
     2,
     "0"
   );
-  diffMinute = String(Math.floor((diffDate / (1000 * 60)) % 60)).padStart(
+  const diffSecond = String(Math.floor((diffDate / 1000) % 60)).padStart(
     2,
     "0"
   );
-  diffSecond = String(Math.floor((diffDate / 1000) % 60)).padStart(2, "0");
 
   nowClock.innerText = `${diffDay}d : ${diffHour}h : ${diffMinute}m : ${diffSecond}s`;
 }
