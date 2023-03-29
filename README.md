@@ -41,3 +41,12 @@
 - localstorage.setItem("", "") : 로컬스토리지 추가하기
 - localstorage.getItem("") : 로컬스토리지 가져오기
 - localstorage.removeItem("") : 로컬스토리지 삭제하기
+
+# 자바스크립트(3.29) : CLOCK
+
+- setInterval("", n) : 일정 주기마다 코드 실행하기
+- setTimeout("", n) : 일정 시간뒤에 코드 실행하기
+- new Date() : 시간 정보를 담은 객체 만들기
+- padStart(n, "") : 문자열의 길이를 n으로 하고, n이 아닐경우 앞쪽에 ""를 추가하는 메소드
+- padEnd(n, "") : 문자열의 길이를 n으로 하고, n이 아닐경우 뒤쪽에 ""를 추가하는 메소드
+- String() : 숫자를 문자로 바꾸기
