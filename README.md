@@ -50,3 +50,10 @@
 - padStart(n, "") : 문자열의 길이를 n으로 하고, n이 아닐경우 앞쪽에 ""를 추가하기
 - padEnd(n, "") : 문자열의 길이를 n으로 하고, n이 아닐경우 뒤쪽에 ""를 추가하기
 - String() : 숫자를 문자로 바꾸기
+
+# 자바스크립트(3.30) : QUOTES AND BACKGROUND
+
+- Math.random() : 0~1 사이의 랜덤한 값 가져오기
+- Math.floor() : 소수점 제거하기(내림)
+- createElement("") : 요소 생성하기
+- document.body.appendChild() : 요소를 문서 맨뒤에 추가하기
