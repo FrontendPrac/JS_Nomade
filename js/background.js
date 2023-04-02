@@ -19,7 +19,15 @@ const colors = [
   "#ff3f34",
 ];
 
-const randomIndex = Math.floor(Math.random() * colors.length);
-const bgColor = document.body;
+const btnBG = document.querySelector("#btnBG");
 
-bgColor.style.backgroundColor = `${colors[randomIndex]}`;
+function handleClick() {
+  const randomColor_A = colors[Math.floor(Math.random() * colors.length)];
+  const randomColor_B = colors[Math.floor(Math.random() * colors.length)];
+  if (randomColor_A === randomColor_B) {
+    return handleClick();
+  }
+  document.body.style.background = `linear-gradient(to left, ${randomColor_A}, ${randomColor_B})`;
+}
+
+btnBG.addEventListener("click", handleClick);
