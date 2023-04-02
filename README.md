@@ -57,3 +57,9 @@
 - Math.floor() : 소수점 제거하기(내림)
 - createElement("") : 요소 생성하기
 - document.body.appendChild() : 요소를 문서 맨뒤에 추가하기
+
+# 자바스크립트(4.3) : TO DO LIST
+
+- JSON.stringify() : 자바스크립트 객체 또는 배열을 문자열로 만들기 -> 자바스크립트 객체 또는 배열을 문자열로 저장하고 싶을때 사용한다.
+- JSON.parse() : 문자열을 자바스크립트 객체 또는 배열로 만들기 -> 문자열을 자바스크립트 객체 또는 배열로 불러오고 싶을때 사용한다.
+- submit의 eventListener가 실행 함수에게 event argument를 제공해주는 것처럼 배열 메소드인 forEach도 실행 함수에게 item argument를 제공핟다.
