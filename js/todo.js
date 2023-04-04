@@ -5,7 +5,7 @@ const todoList = document.querySelector("#todo-list");
 const TODOS_KEY = "todos";
 
 // 투두 리스트 배열
-const todos = [];
+let todos = [];
 
 // 투두 리스트 저장 함수
 function saveTodos() {
@@ -21,8 +21,9 @@ function deleteTodo(event) {
 // 투두 페인팅 함수
 function paintTodo(newTodo) {
   const li = document.createElement("li");
+  li.id = newTodo.id;
   const span = document.createElement("span");
-  span.innerText = newTodo;
+  span.innerText = newTodo.text;
   const button = document.createElement("button");
   button.innerText = "❌";
   button.addEventListener("click", deleteTodo);
@@ -36,16 +37,22 @@ function handleTodoSubmit(event) {
   event.preventDefault();
   const newTodo = todoInput.value;
   todoInput.value = "";
-  todos.push(newTodo);
-  paintTodo(newTodo);
+  const newTodoObj = {
+    id: Date.now(),
+    text: newTodo,
+  };
+  todos.push(newTodoObj);
+  paintTodo(newTodoObj);
   saveTodos();
 }
 
 todoForm.addEventListener("submit", handleTodoSubmit);
 
+// 투두 리스트 가져오기
 const savedTodos = localStorage.getItem(TODOS_KEY);
 
-if (saveTodos) {
+if (savedTodos) {
   const parsedTodos = JSON.parse(savedTodos);
-  parsedTodos.forEach((item) => console.log("this is the turn of", item));
+  todos = parsedTodos;
+  parsedTodos.forEach((item) => paintTodo(item));
 }
