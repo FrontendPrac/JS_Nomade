@@ -16,6 +16,8 @@ function saveTodos() {
 function deleteTodo(event) {
   const li = event.target.parentElement;
   li.remove();
+  todos = todos.filter((todo) => todo.id !== parseInt(li.id));
+  saveTodos();
 }
 
 // 투두 페인팅 함수
