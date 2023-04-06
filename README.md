@@ -67,3 +67,7 @@
 # 자바스크립트(4.5) : WEATHER
 
 - navigator.geolocation.getCurrentPosition(콜백함수, 콜백함수) : 내 지역 정보 가져오기
+
+# 자바스크립트(4.6) : WEATHER
+
+- https://openweathermap.org : 날씨 제공 API
